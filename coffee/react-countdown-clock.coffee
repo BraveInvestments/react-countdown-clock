@@ -98,7 +98,7 @@ module.exports = React.createClass
     decimals = (@_seconds <= 9.9) ? 1 : 0
     @_context.globalAlpha = @props.alpha
     @_context.fillStyle = @props.color
-    @_context.fillText @_seconds.toFixed(decimals), @_radius, @_radius
+    @_context.fillText '', @_radius, @_radius
     @_context.beginPath()
     @_context.arc @_radius, @_radius, @_radius,     Math.PI * 1.5,     Math.PI * percent, false
     @_context.arc @_radius, @_radius, @_radius/1.8, Math.PI * percent, Math.PI * 1.5,     true
